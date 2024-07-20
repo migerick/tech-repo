@@ -1,0 +1,38 @@
+@import 'variables';
+
+@mixin mq_mobile {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mq_tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@function calc_one_column_desktop($columns) {
+  @return calc(calc(min($max_width_layout, 100vw) / 37) * $columns)
+}
+
+@function calc_one_column_mobile($columns) {
+  @return calc(calc(100vw / 45) * $columns);
+}
+
+@mixin property_with_columns($property, $columns) {
+  #{$property}: calc_one_column_desktop($columns);
+
+  @include mq_mobile {
+    #{$property}: calc_one_column_mobile($columns)
+  }
+}
+
+@mixin calc_column_layout($columns) {
+  @include property_with_columns(width, $columns);
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+export interface Journey {
+    idcs: string;
+    hour: number;
+    relativehour: number;
+    shift: number;
+    tons: number;
+    hangsum: number;
+    hangavg: number;
+    queuesum: number;
+    queueavg: number;
+    au: number;
+    loadingequipmentname: string;
+    haulingcategoryname: string;
+    loadingcategoryname: string;
+    loadingequipmentid: number;
+    loadingfleettypeid: number;
+    loadingfleetcategoryid: number;
+    haulingequipmentid: number;
+    haulingfleettypeid: number;
+    haulingfleetcategoryid: number;
+    ore: number | null;
+    waste: number;
+    expit_ore: number | null;
+    timecycleloading: number;
+    timecyclehauling: number;
+    mineid: number;
+    locationdump: string;
+    isreport: number | null;
+    dim_name_material: string;
+    dim_code_description: string;
+    fact_datetime_start_time_traveling_empty: string;
+}

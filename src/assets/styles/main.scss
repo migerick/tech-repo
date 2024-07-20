@@ -1,0 +1,60 @@
+@import "variables";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  src: url('../fonts/webfonts/fa-brands-400.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-regular-400.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-v4compatibility.woff2') format('woff2');
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: 'Lato', 'Roboto', sans-serif, 'Font Awesome 6 Free';
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+@import "global/common";
+@import "ContactLayout.style";
+@import "Header.style";
+@import "Footer.style";
+@import "typo.style";
+
+
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --grey_1_title: #{$grey_1_title};
+  --grey_2_paragraph: #{$grey_2_paragraph};
+  --grey_3: #{$grey_3};
+  --gray_4: #{$gray_4};
+  --gray_5: #{$gray_5};
+  --gray_6: #{$gray_6};
+  --max_width_layout: #{$max_width_layout};
+  // Responsive
+  --container_margin: #{$margin_container_desk};
+  --show_only_desk: #{$display_block};
+  --show_only_mobile: #{$display_none};
+  // fonts
+  --main-font: #{$main-font};
+  --secondary-font: #{$secondary-font};
+}

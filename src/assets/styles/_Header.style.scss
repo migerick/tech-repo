@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  background: transparent;
+
+  &__logo--desk {
+    display: var(--show_only_desk);
+  }
+
+  &__logo--mobile {
+    display: var(--show_only_mobile);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    height: 64px;
+    @include calc_column_layout(35);
+
+    @media only screen and (max-width: #{$mobile}) {
+      @include calc_column_layout(37);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    &__container {
+      height: 54px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.container__app {
+  margin: auto;
+}
+
+.container_general {
+  background-color: transparent;
+  margin: auto;
+  @include calc_column_layout(37);
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey_2_paragraph);
+  font-weight: 400;
+  //border-bottom: 1px solid var(--grey_2_paragraph);
+}
+
+.u {
+  &_mar {
+    &--auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &_relative {
+    position: relative;
+  }
+
+  &_flex {
+    &_ai-ce {
+      display: flex;
+      align-items: center;
+    }
+
+    &_jc-ce {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

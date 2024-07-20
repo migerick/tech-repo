@@ -1,0 +1,17 @@
+.footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
+  &__container {
+    @include calc_column_layout(35);
+
+
+    @media only screen and (max-width: #{$mobile}) {
+      @include calc_column_layout(37);
+    }
+    color: var(--grey_3);
+  }
+}

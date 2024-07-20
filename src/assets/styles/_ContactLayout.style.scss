@@ -1,0 +1,51 @@
+.contact_layout {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: var(--grey_2_paragraph);
+
+
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &--highlight {
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--acian_2_hover);
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--desk {
+    display: block;
+  }
+
+  &--mobile {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--acian_2_hover);
+
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact_layout--mobile {
+    display: block;
+  }
+  .contact_layout--desk {
+    display: none;
+  }
+}
