@@ -9,7 +9,7 @@ export const Contact = () => {
                 </div>
                 <div className="contact_layout__text--highlight">
                     <IconGithub/>
-                    <a href="https://github.com/migerick" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/migerick/tech-repo" target="_blank" rel="noreferrer">
                         <div className="contact_layout--desk">
                             migerick
                         </div>
